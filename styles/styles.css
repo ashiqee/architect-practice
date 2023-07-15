@@ -43,14 +43,20 @@ nav a{
 
 .btn-primary{
     padding: 5px 10px 5px 10px;
-    background-color: coral;
-    border: none;
-    border-radius: 5px;
+    background-color:#FF900E;
+    font-size: 1.25rem;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    border: 0;
+    cursor: pointer;
 }
 
 /* banner styles */
 
-.banner{
+.banner img{
+    margin-top: 20px;
+    width: 100%;
 
 }
 
@@ -71,3 +77,28 @@ nav a{
     color: #727272;
 }
 
+/* responsive style media 
+ */
+
+ @media screen and (max-width:596px) {
+header{
+    padding: 20px;
+}    
+nav{
+    flex-direction: column;
+}
+ }
+
+ 
+/* tablet or medium devices */
+ @media screen and (min-width: 576px) and (max-width:960px) {
+
+    header{
+        padding: 50px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    
+ }
