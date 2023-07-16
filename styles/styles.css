@@ -1,12 +1,19 @@
 /* work sans font from google fonts  */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,700&display=swap");
+
 /* share styles */
 
 * {
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.text-light-gray {
+  color: #727272;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 header {
@@ -71,40 +78,11 @@ nav a {
   margin-bottom: 10px;
 }
 
-.banner-description {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #727272;
-}
-
-/* responsive style media 
- */
-
-@media screen and (max-width: 596px) {
-  header {
-    padding: 20px;
-  }
-  nav {
-    flex-direction: column;
-  }
-}
-
-/* tablet or medium devices */
-@media screen and (min-width: 576px) and (max-width: 960px) {
-  header {
-    padding: 50px;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-}
-
 /* main style  */
 
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
 
 /* feature style  */
@@ -137,4 +115,37 @@ main {
 .text-features {
   color: #ff900e;
   font-weight: 700;
+}
+
+/* responsive style media 
+ */
+
+@media screen and (max-width: 596px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .teams-container {
+    flex-direction: column;
+  }
+  .teams-img-content {
+    grid-template-columns: 1fr;
+  }
+  .teams-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 596px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
 }
